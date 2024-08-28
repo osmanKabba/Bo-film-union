@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #59733f;
+  padding: 10px 0;
+  text-align: center;
+  border: 2px solid;
+  background: repeating-linear-gradient(
+    45deg,
+    #0d0d0d,
+    #f2f2f2 10px,
+    #022601 10px,
+    #467302 20px,
+    #5c735d 20px,
+    #3fbf04 30px,
+    #0d1a26 40px
+  );
+  border-color: #735439;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: radial-gradient(circle, #3fbf04, #0d1a26, #284010, #f2f2f2);
+  background-size: 200% 200%;
+  animation: radialGradientAnimation 8s ease infinite;
+  color: #ffffff;
+  font-weight: bolder;
+  position: relative;
+}
+
+@keyframes radialGradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo img {
+  height: 100px;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.left-logo {
+  position: absolute;
+  left: 0;
+}
+
+.right-logo {
+  position: absolute;
+  right: 0;
+}
+
+.logo h1 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  border: 2px solid #ddd;
+  background-color: darkgrey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container section {
+  flex: 1;
+  min-width: 200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.container address {
+  font-style: normal;
+  display: inline;
+}
+
+.map {
+  text-align: center;
+  margin: 0px;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 800px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  background-color: white;
+}
+figcaption {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3px;
+  border: 2px solid #ddd;
+  background-color: gainsboro;
+}
+
+.gallery figure {
+  margin: 3px;
+  text-align: center;
+  width: 30%;
+}
+
+.gallery img {
+  max-width: 70%;
+  height: 70%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 1px solid #022601;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.3em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 5px solid #022601;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  border: 5px solid #022601;
+}
+
+button {
+  display: inline-block;
+  padding: 10px;
+}
+
+.lin {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lin h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.lin ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lin li {
+  margin-bottom: 20px;
+  border: solid #467302;
+  background-color: #f2f2f2;
+  width: 600px;
+}
+
+.lin a {
+  text-decoration: none;
+  color: #015958;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+  font-size: x-large;
+}
+
+.lin a:hover {
+  color: #d8ab82;
+}
+
+footer {
+  background: radial-gradient(
+    circle,
+    #a7bf8f,
+    #f2f2f2,
+    #2c6cbf,
+    #032ca6,
+    #5c735d,
+    #5c735d,
+    #f2f2f2
+  );
+  background-size: 200% 200%;
+  animation: radialGradientAnimation 8s ease infinite;
+  color: #ffffff;
+  font-weight: bolder;
+  border-color: #735439;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
